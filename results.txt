@@ -1,0 +1,33 @@
+#node runtime.js >> results.txt
+
+Results for the tinyArray
+================================
+insert 38.8 μs
+append 89.2 μs
+
+
+Results for the smallArray
+================================
+insert 27.4 μs
+append 14.1 μs
+
+
+Results for the mediumArray
+================================
+insert 10.5 μs
+append 45.9 μs
+
+
+Results for the largeArray
+================================
+insert 7.1664 ms
+append 425 μs
+
+
+Results for the extraLargeArray
+================================
+insert 831.6485 ms
+append 6.5001 ms
+
+For a small array the unshift and push methods have not concrete differences but as the array get large it is clear that Unshift is much slower than Push . This is because Unshift needs to shift all the elements the left once the first element is added.
+
